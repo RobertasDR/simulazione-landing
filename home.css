@@ -5,3 +5,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* JUMBO SECTION */
+
+.jumbo{
+    height: calc(100vh - 70px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/Jumbo-sfondo.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+
+}
+
+.jumbo h1{
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    font-style: italic;
+}
+
+/* CTA JUMBO */
+
+.btn1, .btn2{
+    margin: 40px 20px 0 20px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 700;
+    /* background-color: white;
+    color: black; */
+}
+
+.jumbo .cta .btn1{ 
+    background-color: white;
+    color: black;
+}
+
+.jumbo .btn2{
+    background-color:rgb(160, 124, 4);
+    color: black;
+}
+
+.btn1:hover, .btn2:hover{
+    /* font-size: 32px; */
+    background-color: black;
+    color: rgb(160, 124, 4);
+}
+
+
+
