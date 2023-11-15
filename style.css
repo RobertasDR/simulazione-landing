@@ -6,28 +6,40 @@
     box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    background-color: black;
-}
+/* ASSETS */
 
-nav{
-    background-color: black;
-    height: 70px;
-    border-bottom: 1px solid white;
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .wrapper{
     max-width: 1600px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
+    width: 100%;
+    height: 100%;
     justify-content: space-between;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    font-family: 'Lora', serif;
+}
+
+/* NAVBAR */
+
+nav{
+    background-color: black;
+    height: 70px;
+    /* border-bottom: 1px solid white; */
 }
 
 .logo img{
     height: 40px;
     width: 40px;
+    margin-left: 20px;
 }
 
 nav .menu a{
@@ -44,3 +56,6 @@ nav .menu li{
 nav .menu a:hover{
     color: rgb(226, 194, 15);
 }
+
+
+
