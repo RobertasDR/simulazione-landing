@@ -5,3 +5,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    height: 100vh;
+    background-color: black;
+}
+
+nav{
+    background-color: black;
+    height: 70px;
+    border-bottom: 1px solid white;
+}
+
+.wrapper{
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    height: 40px;
+    width: 40px;
+}
+
+nav .menu a{
+    color: white;
+    text-decoration: none;
+}
+
+nav .menu li{
+    list-style: none;
+    margin: 20px;
+    font-size: 20px;
+}
+
+nav .menu a:hover{
+    color: rgb(226, 194, 15);
+}
