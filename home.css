@@ -34,8 +34,7 @@
     font-size: 22px;
     text-decoration: none;
     font-weight: 700;
-    /* background-color: white;
-    color: black; */
+    text-align: center;
 }
 
 .jumbo .btn1{ 
@@ -83,6 +82,10 @@
     flex-direction: row-reverse;
 }
 
+.divider{
+    display: none;
+}
+
 /* SEZIONE 2 */
 
 #secondSec{
@@ -92,7 +95,7 @@
 #secondSec h2{
     font-size: 32px;
     color: white;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 24px;
 }
 
@@ -102,47 +105,69 @@
     margin: 32px;
 }
 
-/* FOOTER */
+/* MEDIA QUERY TABLET */
 
-footer{
-    border-top: 1px solid white;
-    height: 250px;
-    margin-top: 70px;
+@media only screen and (max-width:1024px){
+
+    .jumbo h1{
+        color: white;
+        text-align: center;
+        font-size: 64px;
+    }
+
+    /* PRIMA SEZIONE */
+
+    .sec{
+        flex-direction: column;
+        border: 0;
+        margin-top: 32px;
+    }
+    
+    .description{
+        align-items: center;
+        text-align: center;
+    }
+
+    /* DIVIDER */
+
+    .divider{
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .divider img{
+        width: 200px;
+        height: auto;
+        text-align: center;   
+    }
+
+    /* SECONDA SEZIONE */
+
+    .discover{
+        flex-direction: column; 
+    }
+
 }
 
-.footer{
-    align-items: center;
-}
 
-.flogo, .page, .link{
-    font-size: 20px;
-    color: white;
-    width: 100%;
-    text-align: center;
-}
+/* MEDIA QUERY MOBILE */
 
-.flogo{
-    align-items: start;
-}
+@media only screen and (max-width:430px){
+    /* HEADER */
 
-.flogo img{
-    height: 48px;
-    width: auto;
-    margin-left: 32px;
-}
+    .jumbo h1{
+        color: white;
+        text-align: center;
+        font-size: 40px;
+    }
 
-.footer ul{
-    list-style: none;
-}
+    .btn1, .btn2{
+        margin: 20px 20px 0 20px;
+        padding: 6px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
 
-.footer ul li{
-    margin-top: 12px;
-}
 
-.copy{
-    border-top: 1px solid white;
-    text-align: center;
-    color: white;
-    height: 70px;
-    padding: 20px;
 }

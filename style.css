@@ -42,20 +42,119 @@ nav{
     margin-left: 20px;
 }
 
+.menu img{
+    display: none;
+}
+
 nav .menu a{
     color: white;
     text-decoration: none;
+    font-size: 20px;
 }
 
 nav .menu li{
     list-style: none;
     margin: 20px;
-    font-size: 20px;
+    
 }
 
 nav .menu a:hover{
     color: rgb(226, 194, 15);
 }
 
+/* FOOTER */
+
+footer{
+    border-top: 1px solid white;
+    height: 250px;
+    margin-top: 70px;
+}
+
+.footer{
+    align-items: center;
+}
+
+.flogo, .page, .link{
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.flogo{
+    align-items: start;
+}
+
+.flogo img{
+    height: 48px;
+    width: auto;
+    margin-left: 32px;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer ul li{
+    margin-top: 12px;
+}
+
+.copy{
+    border-top: 1px solid white;
+    text-align: center;
+    color: white;
+    height: 70px;
+    padding: 20px;
+}
 
 
+/* MEDIA QUERY TABLET */
+
+@media only screen and (max-width:1024px){
+
+    nav .menu a{
+        font-size: 16px;
+    }
+
+    /* FOOTER */
+
+    footer{
+        border-top: 1px solid white;
+        height: 150px;
+        margin-top: 16px;
+    }
+    .flogo, .page, .link{
+        font-size: 16px;
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+
+    .flogo img{
+        height: 32px;
+        width: auto;
+        margin-left: 12px;
+    }
+
+}
+
+
+/* MEDIA QUERY MOBILE */
+
+@media only screen and (max-width:430px){
+ 
+    /* NAVBAR */
+
+    .menu ul{
+        display: none;
+    }
+
+    .menu img{
+        display: block;
+        height: 40px;
+        width: 40px;
+        margin-right: 20px;
+    }
+
+
+}
